@@ -60,4 +60,31 @@ components.v1.html(lda_viz4, width=1200, height=500, scrolling=True)
 
 '''
 ## Sentiment Analysis
+### Most commonly used words in the tweets
 '''
+st.image('Images/cleaned.png', width=600)
+
+'''
+### SentiWordNet (Lexicon based) model
+'''
+HtmlFile = open("Images/senti_word_review.html", 'r', encoding='utf-8')
+senti1 = HtmlFile.read() 
+print(senti1)
+components.v1.html(senti1, width=1200, height=500, scrolling=True)
+
+'''
+### Comparision of Naive Bayes and SVM classifiers
+'''
+col1, mid, col2 = st.beta_columns([4,1,4])
+with col1:
+    st.image('Images/roc_nb.png', width=600)
+with col2:
+    st.image('Images/roc_svm.png', width=600)
+
+'''
+## Sentiments associated with each topic
+'''    
+HtmlFile = open("Images/sentiment&topics_reviews.html", 'r', encoding='utf-8')
+senti1 = HtmlFile.read() 
+print(senti1)
+components.v1.html(senti1, width=1200, height=500, scrolling=True)
