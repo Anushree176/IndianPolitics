@@ -1,7 +1,14 @@
 import streamlit as st
 from streamlit import components
 
-st. set_page_config(layout="wide")
+st.set_page_config(
+    page_title="INDIAN POLITICS : Topic Modelling & Sentiment Analysis",
+    page_icon="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
+
 st.title('INDIAN POLITICS : Topic Modelling & Sentiment Analysis')
 '''
 In the past decade, there has been a huge boom in data generation and analysis. Humongous amount of unstructured data is available in the forms of text documents, images, audios, emails and the most influential, social media data. 
@@ -22,20 +29,20 @@ In the framework proposed, our main intention is to gain useful insights into th
 #                    <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>""")
 
 
-from linkpreview import link_preview
+# from linkpreview import link_preview
 
-# url = "http://localhost"
-# content = """
-# <html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
-#                    <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
-#                    <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>
-# """
-preview = link_preview("http://github.com/")
-print("title:", preview.title)
-print("description:", preview.description)
-print("image:", preview.image)
-print("force_title:", preview.force_title)
-print("absolute_image:", preview.absolute_image)
+# # url = "http://localhost"
+# # content = """
+# # <html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
+# #                    <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
+# #                    <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>
+# # """
+# preview = link_preview("http://github.com/")
+# print("title:", preview.title)
+# print("description:", preview.description)
+# print("image:", preview.image)
+# print("force_title:", preview.force_title)
+# print("absolute_image:", preview.absolute_image)
 # preview = link_preview(url, content)
 # print("title:", preview.title)
 # print("description:", preview.description)
