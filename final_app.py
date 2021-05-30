@@ -3,6 +3,23 @@ from streamlit import components
 
 st. set_page_config(layout="wide")
 st.title('INDIAN POLITICS : Topic Modelling & Sentiment Analysis')
+'''
+In the past decade, there has been a huge boom in data generation and analysis. Humongous amount of unstructured data is available in the forms of text documents, images, audios, emails and the most influential, social media data. 
+Even if we narrow down to textual data, we are unable to process and gain hidden insights from it due to alarming rate of it’s generation. Thus, we need lucid pre-processing techniques and powerful algorithms to gain maximum information.
+ 
+This is where Artificial Intelligence and Natural Language Processing come into play. We are going to focus on the textual data analytics and sentiment analysis applications of NLP.
+Textual data analytics is a task used for processing text data to derive the high quality of information and to discover patterns from text. Sentiment analysis tries to identify and extract opinions within a given text across blogs, reviews, social media, forums, news etc.
+Unleashing this power can prove to be a boon in many domains, ranging from finances to arts and education to politics. 
+
+Through our study we intend to investigate the public opinion regarding the unique public relations campaign ‘Mann Ki Baat’ initiated by incumbent Prime Minister of India, Mr. Narendra Modi. Gaining insight into the campaign will be beneficial to the government, opposition parties as well as for academia.
+
+
+In the framework proposed, our main intention is to gain useful insights into the 'Mann Ki Baat' speeches and also extract the sentiment attached with the public reviews regarding the same.
+'''
+
+components.v1.html("""<html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
+                   <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
+                   <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>""")
 
 '''
 ## Gensim LDA 
