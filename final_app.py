@@ -24,18 +24,24 @@ In the framework proposed, our main intention is to gain useful insights into th
 
 from linkpreview import link_preview
 
-url = "http://localhost"
-content = """
-<html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
-                   <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
-                   <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>
-"""
-preview = link_preview(url, content)
+# url = "http://localhost"
+# content = """
+# <html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
+#                    <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
+#                    <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>
+# """
+preview = link_preview("http://github.com/")
 print("title:", preview.title)
 print("description:", preview.description)
 print("image:", preview.image)
 print("force_title:", preview.force_title)
 print("absolute_image:", preview.absolute_image)
+# preview = link_preview(url, content)
+# print("title:", preview.title)
+# print("description:", preview.description)
+# print("image:", preview.image)
+# print("force_title:", preview.force_title)
+# print("absolute_image:", preview.absolute_image)
 
 
 '''
