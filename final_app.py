@@ -8,6 +8,10 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+components.v1.html("""<html><head><meta name="description" content="_" /><meta name="title" property="og:title" content="_" />
+                   <meta property="og:type" content="_" /><meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51212698633_3acc0d118f_c.jpg" />
+                   <meta name="description" property="og:description" content="_" /><meta name="author" content="Anushree Kolhe" /></head></html>""")
+
 
 st.title('INDIAN POLITICS : Topic Modelling & Sentiment Analysis')
 '''
